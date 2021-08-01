@@ -1,0 +1,343 @@
+/* Revision 31/07/2021 */
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+
+#preloader {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: block;
+}
+    #preloadLogo {
+        background-color: transparent;
+        background-image: url("../images/logo.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 10vh;
+        animation-name: Loading;
+        animation-delay: 0.5s;
+        animation-duration: 2s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+    }
+
+#node-top {position: absolute; z-index: 0; background-color: transparent; top: 0px;}
+#node-bottom {position: absolute; z-index: 0; background-color: transparent;}
+
+#header {
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    z-index: 20;
+    top: 0vh;
+    margin: 0;
+}
+
+    #headerLeft {background-color: transparent; position: relative; height: 100%;}
+        #headerLeft img {position: absolute; transform: translate(0%, -50%);}
+
+    #headerRight {background-color: transparent; position: relative;}
+        #headerRight span {transition: 0.3s;}
+
+#contentOne {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    color: white;
+}
+    #cOneBox {
+        background-color: transparent;
+        background-image: url("../images/group01.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+        position: absolute;
+        z-index: 7;
+        top: 56vh;
+    }
+        #oneBoxExtra {
+            background-color: transparent;
+            position: absolute;
+            top: 50%;
+            transform: translate(0%,-50%);
+            z-index: 8;
+            margin: 0;
+        }
+            
+    #breakIcon {
+        background-color: transparent;
+        position: absolute;
+        height: 10vh;
+        width: 10vh;
+        left: 50%;
+        top: 70vh;
+        z-index: 8;
+        transform: translate(-50%, 0%);
+        animation-name: Myska;
+        animation-delay: 2s;
+        animation-duration: 4s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+#breakOne {
+    background-color: transparent;
+    background-image: url("../images/vlna.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right top;
+    position: absolute;
+    width: 100vw;
+    z-index: 7;
+}
+#breakTwo {
+    background-color: transparent;
+    background-image: url("../images/gradWhiteBot.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center bottom;
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    top: 50vh;
+    z-index: 4;
+}
+#breakThree {
+    background-color: transparent;
+    background-image: url("../images/bThree.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+    position: absolute;
+    width: 100vw;
+    height: 20vh;
+    top: 80vh;
+    z-index: 4;
+}
+#breakSubG {
+    background-color: transparent;
+    background-image: url("../images/subg2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    position: absolute;
+    width: 50vw;
+    height: 10vh;
+    left: 60vw;
+    z-index: 6;
+}
+
+#particles-js {z-index: 5; display: none;}
+#contentTwo {background-color: transparent; position: absolute; display: none; z-index: 5;}
+#contentTwo.pageActive, #particles-js.pageActive {display: block;}
+
+    #contentTwoTop {
+        background-color: transparent;
+        background-image: url("../images/gradWhiteTop.png");
+        background-repeat: repeat-x;
+        background-size: contain;
+        background-position: center top;
+        position: absolute;
+        z-index: 6;
+        width: 100vw;
+        height: 20vh;
+        top: 0;
+    }
+
+    #cTwoLine {
+        position: absolute;
+        left: 50%;
+        z-index: 6;
+        transform: translate(-50%,0%);
+        border: 3px #E6E6E6 solid;
+        margin: 0;
+        border-radius: 30px;
+    }
+
+    #cTwoBoxes {width: 100%; z-index: 7; position: absolute; left: 50%; transform: translate(-50%,0%); text-align: center;}
+
+    .cTwoBox {background-color: transparent; position: relative; transition: 0.3s; vertical-align: top;}
+
+        .twoBoxInner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: 0.3s;
+            transform-style: preserve-3d;
+            box-shadow: 0px 0px 15px #666;
+        }
+        .twoBoxInner.active {transform: rotateY(180deg);}
+        
+        .tbFront {
+            position: absolute;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transition: 0.3s;
+            overflow: hidden;
+        }
+
+        .twoBoxInner .tbFront {width: 100%;}
+        .twoBoxInner.active .tbFront {width: 0% !important;}
+
+        .twoBoxHead {
+            background-color: white;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+            .tbhPic {background-size: contain; background-repeat: no-repeat; display: block;}
+
+                #iconA {background-image: url("../images/ikony/speed.svg"); background-position: center;}
+                #iconB {background-image: url("../images/ikony/quality.svg"); background-position: center;}
+                #iconC {background-image: url("../images/ikony/price.svg"); background-position: center;}
+
+            .twoBoxHead b {display: block; padding: 0; color:black; font-weight: bold;}
+            .twoBoxHead p {display: block; padding: 0; color: #888; min-height: 5vh;}
+            .twoBoxHead p.infoActive {cursor: unset!important;}
+
+        .twoBoxTail {background-color: #3DAE2B; position: absolute; bottom: 0px; width: 100%;}
+            .twoBoxTail span {color: white; font-weight: bold; white-space: nowrap;}
+
+        .tbBack {
+            background-color:white;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+            text-align: left;
+            overflow: hidden;
+        }
+        
+        .twoBoxForm {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            background-color: white;
+            height: 100%;
+            width: 100%;
+            transition: 0.3s;
+        }
+        .cTwoBox div.formActive{height: 100% !important;}
+        .cTwoBox div.active{height: 100% !important;}
+
+            .twoBoxForm .formHead {flex: 20%;}
+            .twoBoxForm .formHead span, .twoBoxForm .formHead b {display: inline-block; line-height: 10vh; vertical-align: middle; margin: 0vh 1vw 0vh 1vw;}
+            .twoBoxForm .formHead span {color:#ccc;}
+            .twoBoxForm .formBody p {margin: 0vh 2vw;}
+            .twoBoxForm .formBody {flex: 80%;}
+
+            .formBody .inputWrap {border-bottom: 1px #ccc solid; margin: 2vh 2vw;}
+            .formBody .inputWrap input {background-color: transparent; border: none; height: 4vh; width: 100%; font-family: 'Exo', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+            .formBody .inputWrap input:focus {outline-color: #3DAE2B;}
+            .formBody .inputWrap input.error {outline-color: red; border: 1.5px solid red; border-radius: 4px;}
+
+            .formBody button {
+                background-color: #3DAE2B;
+                color: white;
+                width: 80%;
+                border: none;
+                border-radius: 15px;
+                margin: 5vh 0vw 0vh 2vw;
+                font-weight: bold;
+            }
+                .formBody button img {vertical-align: middle;}
+        
+        .formSent {
+            background-color: white;
+            position: absolute;
+            width: 100%;
+            height: 0%;
+            padding: 0vh 2vw;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+            .formSent b, .formSent p {display: block; padding: 0;}
+            .formSent b {margin: 20vh 0vw 3vh 0vw;}
+            .formSent p {margin: 0;}
+        
+            #cTwoCert {
+                background-color: transparent;
+                position: absolute;
+                width: auto;
+                height: auto;
+                white-space: nowrap;
+            }
+                .ctCertBox {background-color: transparent; position: relative; margin: 2vw;}
+
+#formPage {
+    background-color: white;
+    position: fixed;
+    z-index: 30;
+    left: 100vw;
+    transition: 0.5s;
+}
+#formPage div.active {height: 100%;}
+#formPage .formSent {z-index: 32;}
+
+    #fPageHeader {
+        background-color: white;
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+        z-index: 31;
+    }
+        #fPageHeader span {position: absolute; top: 60%; left: 88%; color: grey;}
+
+    #fPageContent {background-color: white; position: absolute; z-index: 31; padding: 5vh 5vw;}
+        #fPageContent b, #fPageContent p {padding: 0; margin: 0;}
+
+        #fPageContent .inputWrap {border-bottom: 1px #ccc solid; margin: 2vh 0vw;}
+        #fPageContent .inputWrap input {background-color: transparent; border: none; height: 5vh; width: 100%; font-family: 'Exo', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        #fPageContent .inputWrap input:focus {outline-color: #3DAE2B;}
+        #fPageContent .inputWrap input.error {outline-color: red; border: 1.5px solid red; border-radius: 4px;}
+        #fPageContent .inputWrap input#Name {margin: 10vh 0vw 0vh 0vw;}
+
+        #fPageContent button {
+            background-color: #3DAE2B;
+            color: white;
+            height: 8vh;
+            line-height: 8vh;
+            width: 50vw;
+            border: none;
+            border-radius: 15px;
+            margin: 10vh 0vw 0vh 0vw;
+            font-weight: bold;
+        }
+            #fPageContent button img {vertical-align: middle;}
+
+#certifPage, #kontaktPage {background-color: white; z-index: 11; left: 100vw; transition: 0.5s;}
+    #certifPage.pageActive, #kontaktPage.pageActive {left: 0vw;}
+    #certifPage b, #kontaktPage b {color: black;}
+    #certifPage hr, #kontaktPage hr {opacity: 60%;}
+    #certifPage p, #kontaktPage p {color: black;}
+
+    .cPageBox, .kPageBox {background-color: transparent; display: block; position: relative; height: auto;}
+
+    .cPageBox {margin: 0vh 10vw 5vh 10vw;}
+    .kPageBox {margin: 0vh 10vw 2vh 10vw;}
