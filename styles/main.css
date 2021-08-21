@@ -36,7 +36,7 @@ body {
             height: 100%;
             animation: Load;
             animation-delay: 0.2s;
-            animation-duration: 4s;
+            animation-duration: 5s;
         }
 
 #node-top {position: absolute; z-index: 0; background-color: transparent; top: 0;}
