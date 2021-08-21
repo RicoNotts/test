@@ -10,6 +10,6 @@
 
 @keyframes Load {
     0% {width: 0%;}
-    55% {width: 100%;}
+    60% {width: 100%;}
     100% {width: 100%;}
 }
