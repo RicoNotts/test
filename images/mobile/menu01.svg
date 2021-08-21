@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="889.872" height="202.872" viewBox="0 0 889.872 202.872">
+  <defs>
+    <filter id="Menu_Wh" x="276.5" y="41.5" width="418.872" height="161.372" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_73" x="30.5" y="41.522" width="291" height="161.35" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-2"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_75" x="650.372" y="41.5" width="229" height="120.23" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-3"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Menu" transform="translate(292 57.24)">
+    <g transform="matrix(1, 0, 0, 1, -292, -57.24)" filter="url(#Menu_Wh)">
+      <path id="Menu_Wh-2" data-name="Menu Wh" d="M376.319,74.181h-77.4a47.347,47.347,0,0,0-39.045,20.567h0a47.347,47.347,0,0,1-39.045,20.567H2.447V-1.056H376.319Z" transform="translate(289.55 58.06)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -292, -57.24)" filter="url(#Rectangle_73)">
+      <rect id="Rectangle_73-2" data-name="Rectangle 73" width="246" height="116.35" transform="translate(46 57.02)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -292, -57.24)" filter="url(#Rectangle_75)">
+      <rect id="Rectangle_75-2" data-name="Rectangle 75" width="184" height="75.23" transform="translate(665.87 57)" fill="#fff"/>
+    </g>
+    <rect id="Rectangle_76" data-name="Rectangle 76" width="425.5" height="132.23" transform="translate(172.372 -57.24)" fill="#fff"/>
+    <rect id="Rectangle_74" data-name="Rectangle 74" width="478.372" height="173.35" transform="translate(-292 -57.24)" fill="#fff"/>
+  </g>
+</svg>
