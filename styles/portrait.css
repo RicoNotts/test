@@ -1,0 +1,102 @@
+@media only screen
+and (orientation : portrait) {
+    #node-bottom {bottom: 20vh;}
+
+#preloadBar {top: 56%; width: 40vw;}
+#header {
+    background-image: url("../images/mobile/menu01.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 18vh;
+}
+
+#headerLeft {flex: 75%;}
+    #headerLeft img {top: 8vh; left: 20vw; margin: 0; height: 6vh;}
+
+#headerRight {flex: 25%; height: 65%;}
+    #headerRight span {display: block;}
+
+    #oneBoxExtra p {margin: 1vh 0vw 0vh 1vw;}
+    #oneBoxExtra b {display: block; margin: 0vh 0vw 0vh 1vw;}
+
+#breakOne {top: 80vh; height: 25vh;}
+#breakSubG {top: 90vh;}
+
+#cTwoBoxes {margin: 0 0 35vh 0;}
+.cTwoBox { perspective: none;}
+#cTwoCert {left: 50%; transform: translate(-50%, 0%);}
+
+#formPage {width: 100vw; height: 100vh;}
+#formPage.pageActive{left: 0vw;}
+#fPageContent {top: 10vh; width: 90vw; height: 80vh;}
+
+#certifPage, #kontaktPage {position: absolute; min-height: 100vh; width: 100vw; padding: 22vh 0vw 0vh 0vw;}
+#certifPage b, #kontaktPage b {margin: 0vh 10vw;}
+    .cPageBox, .kPageBox {width: 80vw;}
+#kontaktPage iframe {display: block; margin: 7vh 0vw 0vh 0vw; width: 100%; box-shadow: 0px 0px 5vh #aaa;}
+}
+@media only screen
+and (min-width : 1200px)
+and (orientation : portrait) {
+    #contentOne {background-image: url("../images/desktop/img01.jpg");}
+    #cOneBox {height: 15vh; width: 45vw;}
+    #oneBoxExtra {padding: 0vh 3vw;}
+    #breakIcon {display: block;}
+    #contentTwo, #particles-js {top: 95vh; width: 100vw; height: 42vh; padding: 5vh 0vw;}
+    .tbhPic {width: auto; height: 5vh; margin: 3vh 5vw;}
+    .cTwoBox {display: inline-table; width: 29vw; height: 22vh; margin: 5vh 2vw;}
+        .twoBoxHead p {cursor: pointer; margin: 1vh 1vw 2vh 1vw;}
+        .ctbActive {height: 32vh;}
+    .twoBoxTail {height: 5vh;}
+    #cTwoCert {bottom: 5vh;}
+    
+    #certifPage hr, #kontaktPage hr {margin: 1vh 10vw;}
+    #fPageContent button {height: 4vh !important; line-height: 4vh !important;}
+    .inputWrap input {height: 3vh !important;}
+    #fPageContent button img {line-height: 4vh; height: 2vh; margin: 0vh 0vw 0.5vh 3vw;}
+    .kPageBox h1 {margin: 1vh 0vw;}
+    #kontaktPage #wrap {position: absolute; left: 0px;}
+    #kontaktPage iframe {position: absolute; top: 12vh; right: 5vh; height: 40vw; width: 40vw; box-shadow: 0 0 5vw #aaa;}
+}
+@media only screen
+and (max-width : 1200px)
+and (orientation : portrait) {
+    #contentOne {background-image: url("../images/mobile/img01.jpg");}
+    #cOneBox {height: 15vh; width: 55vw;}
+    #oneBoxExtra {padding: 0vh 3vw;}
+    #breakIcon {display: none;}
+    #contentTwo, #particles-js {top: 95vh; width: 100vw; min-height: 190vh; padding: 5vh 0vw;}
+    .tbhPic {width: 30vw; height: 13vh; margin: 5vh 20vw;}
+    .cTwoBox {display: block; width: 70vw; height: 48vh; margin: 5vh 15vw;}
+        .twoBoxHead p {cursor: pointer; margin: 3vh 5vw 5vh 5vw;}
+        .ctbActive {height: 60vh;}
+    .twoBoxTail {height: 10vh;}
+    #cTwoCert {bottom: 15vh;}
+
+    #certifPage hr, #kontaktPage hr {margin: 5vh 10vw;}
+    #fPageContent button img {line-height: 8vh; height: 4vh; margin: 0vh 0vw 1vh 3vw;}
+    .kPageBox h1 {margin: 5vh 0vw;}
+    #kontaktPage iframe {height: 50vh;}
+}
+@media only screen
+and (max-width : 768px)
+and (orientation : portrait) {
+    #headerLeft img {left: 25vw;}
+    #cOneBox {height: 16vh; width: 55vw;}
+    #oneBoxExtra {padding: 0vh 3vw;}
+}
+@media only screen
+and (max-width : 500px)
+and (orientation : portrait) {
+    #headerLeft img {left: 30vw;}
+    #cOneBox {width: 80vw;}
+    #oneBoxExtra {padding: 0vh 2vw;}
+    .ctbActive {height: 67vh;}
+}
+@media only screen
+and (max-width : 320px)
+and (orientation : portrait) {
+    #cOneBox {height: 15vh; width: 85vw;}
+    #oneBoxExtra {padding: 0vh 2vw;}
+}
