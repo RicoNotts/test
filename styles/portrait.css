@@ -92,7 +92,7 @@ and (orientation : portrait) {
     #headerLeft img {left: 30vw;}
     #cOneBox {width: 80vw;}
     #oneBoxExtra {padding: 0vh 2vw;}
-    .ctbActive {height: 67vh;}
+    .ctbActive {height: 68vh;}
 }
 @media only screen
 and (max-width : 320px)
