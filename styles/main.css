@@ -21,7 +21,7 @@ body {
     #preloadBar {
         position: absolute;
         background-color: #aaa;
-        height: 1vh;
+        height: 0.7vh;
         left: 50%;
         transform: translate(-50%,0%);
         transition: 1s;
