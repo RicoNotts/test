@@ -1,0 +1,33 @@
+@media only screen
+and (orientation : portrait) {
+    .trx-landscape {display: none!important;}
+}
+@media only screen
+and (orientation : landscape) {
+    .trx-portrait {display: none!important;}
+}
+
+#trx-wireframe {
+    width: 100vw;
+    height: auto;
+    display: block;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.trx-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+}
+
+.trx-pointer {cursor: pointer;}
+.trx-bold {font-weight: bold;}
+
+.trx-border-S {border-radius: 5px;}
+.trx-border-M {border-radius: 10px;}
+.trx-border-L {border-radius: 15px;}
+.trx-border-XL {border-radius: 20px;}
+.trx-border-XXL {border-radius: 25px;}

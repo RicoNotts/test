@@ -1,0 +1,132 @@
+/* Desktops and laptops (portrait) ----------- */
+@media only screen 
+and (min-width : 1024px)
+and (orientation : portrait) {
+    #headerRight span, #fPageHeader span, #certifPage b, #kontaktPage b, #fPageContent b, .kPageBox h1 {font-size: 2.4rem;}
+    #oneBoxExtra, #burger, .twoBoxHead b, .formSent b, #mForm button, .cPageBox h2 {font-size: 2rem;}
+    .twoBoxTail span, .cPageBox, .kPageBox, .inputWrap input, .formSent p {font-size: 1.6rem;}
+    .twoBoxHead p {font-size: 1.4rem;}
+    #mForm p {font-size: 1rem;}
+}
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    #headerRight span, #fPageHeader span, #certifPage b, #kontaktPage b, #fPageContent b, .kPageBox h1 {font-size: 2.4rem;}
+    #burger, .twoBoxHead b, .cPageBox h2 {font-size: 2rem;}
+    #oneBoxExtra, .twoBoxTail span, #mForm button, .cPageBox, .kPageBox, .inputWrap input  {font-size: 1.6rem;}
+    .twoBoxHead p {font-size: 1.4rem;}
+    #mForm p, #fTwo p, #fTwo b {font-size: 0.8rem;}
+}
+/* Tablets (portrait) ----------- */
+@media only screen 
+and (min-device-width : 500px) 
+and (max-device-width : 768px) 
+and (orientation : portrait) {
+    #headerRight span, #fPageHeader span, #certifPage b, #kontaktPage b, #fPageContent b, .kPageBox h1 {font-size: 2.2rem;}
+    #burger, .twoBoxHead b, .cPageBox h2 {font-size: 1.8rem;}
+    #oneBoxExtra, .twoBoxTail span, #mForm button, .cPageBox, .kPageBox, .inputWrap input  {font-size: 1.4rem;}
+    .twoBoxHead p {font-size: 1.2rem;}
+    #mForm p, #fTwo p, #fTwo b {font-size: 0.7rem;}
+}
+/* Large Smartphones (Portrait) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 500px)
+and (orientation : portrait) {
+    #headerRight span, #fPageHeader span, #certifPage b, #kontaktPage b, #fPageContent b, .kPageBox h1 {font-size: 1.7rem;}
+    #burger, .twoBoxHead b, .cPageBox h2 {font-size: 1.3rem;}
+    #oneBoxExtra, .twoBoxTail span, #mForm button, .cPageBox, .kPageBox, .inputWrap input  {font-size: 1.1rem;}
+    .twoBoxHead p {font-size: 0.9rem;}
+    #mForm p, #fTwo p, #fTwo b {font-size: 0.7rem;}
+}
+
+/* Small Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px)
+and (orientation : portrait) {
+    #headerRight span, #fPageHeader span, #certifPage b, #kontaktPage b, #fPageContent b, .kPageBox h1 {font-size: 1.7rem;}
+    #burger, .twoBoxHead b, .cPageBox h2 {font-size: 1.2rem;}
+    #oneBoxExtra, .twoBoxTail span, #mForm button, .cPageBox, .kPageBox, .inputWrap input  {font-size: 1rem;}
+    .twoBoxHead p {font-size: 0.8rem;}
+    #mForm p, #fTwo p, #fTwo b {font-size: 0.6rem;}
+}
+
+/* Large screens (landscape) ----------- */
+@media only screen 
+and (min-width : 1824px)
+and (orientation : landscape) {
+    #headerRight span, #fPageHeader span, #certifPage b, #kontaktPage b, #fPageContent b, .kPageBox h1 {font-size: 3rem;}
+    .cPageBox h2 {font-size: 2rem;}
+    #oneBoxExtra, #burger, .twoBoxHead b, .formSent b, .formBody button, .formHead span, .formHead b {font-size: 1.7rem;}
+    .twoBoxTail span, #mForm button, .cPageBox, .kPageBox {font-size: 1.6rem;}
+    .twoBoxHead p, .inputWrap input, .formSent p {font-size: 1rem;}
+    #mForm p, .twoBoxForm p {font-size: 0.8rem;}
+}
+/* Ultrawide screens (landscape) ----------- */
+@media only screen 
+and (min-width : 3000px)
+and (orientation : landscape) {
+    #oneBoxExtra, #headerRight span, #fPageHeader span, #certifPage b, #kontaktPage b, #fPageContent b, .kPageBox h1 {font-size: 3rem;}
+    .twoBoxTail span, #burger, .twoBoxHead b, .formSent b, .formBody button, .formHead span, .formHead b, .cPageBox h2 {font-size: 2rem;}
+    #mForm button, .cPageBox, .kPageBox {font-size: 1.8rem;}
+    .twoBoxHead p, .inputWrap input, .formSent p {font-size: 1.4rem;}
+    #mForm p, .twoBoxForm p {font-size: 1.2rem;}
+}
+/* Desktops and laptops (landscape) ----------- */
+@media only screen 
+and (min-width : 1024px)
+and (max-width : 1824px)
+and (orientation : landscape) {
+    #headerRight span, #fPageHeader span, #certifPage b, #kontaktPage b, #fPageContent b, .kPageBox h1 {font-size: 2rem;}
+    #oneBoxExtra, #burger, .twoBoxHead b, .formSent b, .formBody button, .formHead span, .formHead b, .cPageBox h2 {font-size: 1.5rem;}
+    .twoBoxTail span, #mForm button, .cPageBox, .kPageBox{font-size: 1.2rem;}
+    .twoBoxHead p, .inputWrap input, .formSent p {font-size: 1rem;}
+    #mForm p, .twoBoxForm p {font-size: 0.6rem;}
+}
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-height : 768px) 
+and (max-device-height : 850px)
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    #headerRight span, #fPageHeader span, #certifPage b, #kontaktPage b, #fPageContent b, .kPageBox h1 {font-size: 2rem;}
+    #oneBoxExtra, #burger, .twoBoxHead b, .formSent b, .formBody button, .formHead span, .formHead b, .cPageBox h2 {font-size: 1.5rem;}
+    .twoBoxTail span, #mForm button, .cPageBox, .kPageBox, .formSent p {font-size: 1.2rem;}
+    .twoBoxHead p, .inputWrap input {font-size: 1rem;}
+    #mForm p, .twoBoxForm p {font-size: 0.6rem;}
+}
+/* Tablets (landscape) ----------- */
+@media only screen 
+and (min-device-height : 450px)
+and (max-device-height : 768px)
+and (orientation : landscape) {
+    #headerRight span, #fPageHeader span, #certifPage b, #kontaktPage b, #fPageContent b, .kPageBox h1 {font-size: 1.7rem;}
+    #oneBoxExtra, #burger, .twoBoxHead b, .formSent b, .formBody button, .formHead span, .formHead b, .cPageBox h2 {font-size: 1.2rem;}
+    .twoBoxTail span, #mForm button, .cPageBox, .kPageBox, .formSent p {font-size: 0.9rem;}
+    .twoBoxHead p, .inputWrap input {font-size: 0.8rem;}
+    #footer {font-size: 0.6rem;}
+    #mForm p, .twoBoxForm p {font-size: 0.5rem;}
+}
+/* Large Smartphones (landscape) ----------- */
+@media only screen 
+and (min-height : 375px)
+and (max-height : 450px)
+and (orientation : landscape) {
+    #headerRight span, #fPageHeader span, #certifPage b, #kontaktPage b, #fPageContent b, .kPageBox h1 {font-size: 1.7rem;}
+    #oneBoxExtra, #burger, .twoBoxHead b, .formSent b, .cPageBox h2 {font-size: 1.2rem;}
+    .twoBoxTail span, #mForm button, .cPageBox, .kPageBox, .formSent p {font-size: 0.9rem;}
+    .twoBoxHead p, .inputWrap input {font-size: 0.8rem;}
+    #mForm p, .twoBoxForm p, #footer {font-size: 0.5rem;}
+}
+/* Small Smartphones (landscape) ----------- */
+@media only screen 
+and (max-height : 375px)
+and (orientation : landscape) {
+    #headerRight span, #fPageHeader span, #certifPage b, #kontaktPage b, #fPageContent b, .kPageBox h1 {font-size: 1.4rem;}
+    #burger, .twoBoxHead b, .formSent b, .cPageBox h2 {font-size: 1rem;}
+    #oneBoxExtra, .twoBoxTail span, #mForm button, .cPageBox, .kPageBox, .formSent p {font-size: 0.7rem;}
+    .twoBoxHead p, .inputWrap input {font-size: 0.6rem;}
+    #mForm p, .twoBoxForm p, #footer {font-size: 0.4rem;}
+}
